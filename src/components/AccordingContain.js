@@ -21,22 +21,18 @@ const [editcountry , setCountry] = useState(country);
 const [editdescription , setDescription] = useState(description);
 const [name , setName] = useState(fullname);
 
+const cancleedit = (id) =>{
+    setDatashow(false)
+    setGender(gender)
+    setDob(Age)
+    setCountry(country)
+    setDescription(description)
+    setName(fullname)
+} 
 
-
-
-
-    const cancleedit = (id) =>{
-        setDatashow(false)
-        setGender(gender)
-        setDob(Age)
-        setCountry(country)
-        setDescription(description)
-        setName(fullname)
-    } 
-
-    const Editfield = (id) =>{
-        setDatashow(true)
-    }
+const Editfield = (id) =>{
+    setDatashow(true)
+}
   return (
     <>
         <div className="card accordion-contain mt-3" >
