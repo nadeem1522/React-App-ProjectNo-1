@@ -3,21 +3,32 @@ import React, { useState } from 'react'
 
 export default function AccordingContain({id,first,last,picture,dob,gender,country,description,Delethandler}) {
 
+const calculate_age = (dob) => { 
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms); 
+    
+    return Math.abs(age_dt.getUTCFullYear(dob) - 1970);
+}
+
+const Age = calculate_age(new Date(dob))
 
 const fullname = first + " " + last
 const [show , setShow] = useState(false);
 const [datashow , setDatashow] = useState(false);
-const [agedob , setDob] = useState(dob);
+const [agedob , setDob] = useState(Age);
 const [editgender , setGender] = useState(gender);
 const [editcountry , setCountry] = useState(country);
 const [editdescription , setDescription] = useState(description);
 const [name , setName] = useState(fullname);
 
 
+
+
+
     const cancleedit = (id) =>{
         setDatashow(false)
         setGender(gender)
-        setDob(dob)
+        setDob(Age)
         setCountry(country)
         setDescription(description)
         setName(fullname)
@@ -78,7 +89,7 @@ const [name , setName] = useState(fullname);
                                 datashow? 
                                 <>
                                     <select class="form-select text-capitalize" aria-label="Default select example" style={{ maxWidth: 150 ,border: '1px solid #878787',borderRadius: '4px',height:'30px',paddingLeft : 6, paddingTop : 0}} onChange={(e) => setGender(e.target.value)}>
-                                        <option selected>{editgender}</option>
+                                        {/* <option selected>{editgender}</option> */}
                                         <option value="Male">male</option>
                                         <option value="Female">female</option>
                                     </select>

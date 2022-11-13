@@ -25,9 +25,7 @@ const [celebritiesdata , setCelebritiesdata] = useState(celebrities);
 
                 return(
                     <> 
-                        
-                            <AccordingContain key={id} {...data}  Delethandler={Delethandler}/>
-                        
+                        <AccordingContain key={id} {...data}  Delethandler={Delethandler}/> 
                     </>
                 )
             })
