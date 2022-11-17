@@ -4,13 +4,13 @@ import React, { useState } from 'react'
 export default function AccordingContain({id,first,last,picture,dob,gender,country,description,Delethandler}) {
 
 const calculate_age = (dob) => { 
-    var diff_ms = Date.now() - dob.getTime();
-    var age_dt = new Date(diff_ms); 
-    
-    return Math.abs(age_dt.getUTCFullYear(dob) - 1970);
+    var todayDate = new Date().getFullYear()
+    var date = new Date(dob)
+    var dateofyear = date.getFullYear()
+    return  todayDate - dateofyear
 }
 
-const Age = calculate_age(new Date(dob))
+const Age = calculate_age(dob)
 
 const fullname = first + " " + last
 const [show , setShow] = useState(false);
