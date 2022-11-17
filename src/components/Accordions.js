@@ -29,7 +29,7 @@ const [searchfilter , setSearchfilter] = useState('');
         {
             
             celebritiesdata && celebritiesdata.length > 0 ?
-            celebritiesdata.filter(val => {if (searchfilter === ''){return val} else if (val.first.toLowerCase().includes(searchfilter.toLowerCase())||val.last.toLowerCase().includes(searchfilter.toLowerCase()) ){return val}}).map( data =>{
+            celebritiesdata.filter(val => {if (searchfilter === ''){return val} else if (val.first.toLowerCase().includes(searchfilter.toLowerCase()) || val.last.toLowerCase().includes(searchfilter.toLowerCase()) ){return val}}).map( data =>{
                 const { id } = data
                 return(
                     <> 
