@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/factwise_reactjs/static/css/main.28114568.css",
-    "main.js": "/factwise_reactjs/static/js/main.e2a24a62.js",
-    "static/js/787.437c8beb.chunk.js": "/factwise_reactjs/static/js/787.437c8beb.chunk.js",
-    "index.html": "/factwise_reactjs/index.html",
-    "main.28114568.css.map": "/factwise_reactjs/static/css/main.28114568.css.map",
-    "main.e2a24a62.js.map": "/factwise_reactjs/static/js/main.e2a24a62.js.map",
-    "787.437c8beb.chunk.js.map": "/factwise_reactjs/static/js/787.437c8beb.chunk.js.map"
+    "main.css": "/React-App-ProjectNo-1/static/css/main.28114568.css",
+    "main.js": "/React-App-ProjectNo-1/static/js/main.3fcdfe5e.js",
+    "static/js/787.437c8beb.chunk.js": "/React-App-ProjectNo-1/static/js/787.437c8beb.chunk.js",
+    "index.html": "/React-App-ProjectNo-1/index.html",
+    "main.28114568.css.map": "/React-App-ProjectNo-1/static/css/main.28114568.css.map",
+    "main.3fcdfe5e.js.map": "/React-App-ProjectNo-1/static/js/main.3fcdfe5e.js.map",
+    "787.437c8beb.chunk.js.map": "/React-App-ProjectNo-1/static/js/787.437c8beb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28114568.css",
-    "static/js/main.e2a24a62.js"
+    "static/js/main.3fcdfe5e.js"
   ]
 }
